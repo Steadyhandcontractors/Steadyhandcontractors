@@ -2,7 +2,7 @@
   --red: #ed1c24;
   --burgundy: #7b111d;
   --black: #050505;
-  --tan: #f1eadf;
+  --tan: #F4EEE4;
   --white: #ffffff;
   --line: #d8cec0;
   --muted: #5b626a;
@@ -24,7 +24,7 @@ img { max-width: 100%; height: auto; display: block; }
 .topbar { background: var(--black); color: var(--white); font-size: 13px; }
 .topbar .wrap,
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
-.topbar .wrap { min-height: 38px; }
+.topbar .wrap { min-height: 38px; padding: 7px 0; flex-wrap: wrap; }
 .top-items { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
 .top-item { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
 .top-icon, .red { color: var(--red); font-weight: 900; }
@@ -48,7 +48,7 @@ img { max-width: 100%; height: auto; display: block; }
   white-space: nowrap;
 }
 .menu a { padding: 39px 0 34px; border-bottom: 3px solid transparent; }
-.menu a:hover, .menu a.active { border-color: var(--red); }
+.menu a:hover, .menu a[aria-current="page"] { border-color: var(--red); }
 
 .btn,
 button {
@@ -138,7 +138,7 @@ h2 { margin: 0; font-size: 28px; line-height: 1; text-transform: uppercase; font
 .about p { margin: 12px 0 13px; }
 .checks { list-style: none; padding: 0; margin: 0 0 20px; }
 .checks li { margin: 8px 0; font-size: 14px; }
-.checks li::before { content: "✓"; color: var(--red); font-weight: 900; margin-right: 9px; }
+.checks li::before { content: "\2713"; color: var(--red); font-weight: 900; margin-right: 9px; }
 .about-photo img { width: 100%; height: 320px; object-fit: cover; border-radius: 2px; }
 
 .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
@@ -170,6 +170,7 @@ input, textarea {
   font: inherit;
 }
 textarea { min-height: 150px; resize: vertical; }
+.form-note { margin: 14px 0 0; color: var(--muted); font-size: 13px; }
 
 .cta { background: var(--red); color: var(--white); padding: 22px 0; }
 .cta .wrap { display: grid; grid-template-columns: auto 270px; align-items: center; gap: 24px; }
@@ -206,10 +207,11 @@ textarea { min-height: 150px; resize: vertical; }
 @media (max-width: 760px) {
   .wrap { width: min(100% - 24px, 1160px); }
   .topbar .wrap { align-items: flex-start; flex-direction: column; padding: 9px 0; gap: 7px; }
+  .top-items { gap: 14px; }
   .top-item { white-space: normal; }
   .logo { min-width: 0; }
   .logo img { width: 145px; }
-  .menu { max-width: 100%; font-size: 12px; }
+  .menu { max-width: 100%; flex-wrap: wrap; gap: 14px; overflow-x: visible; font-size: 12px; }
   .hero { min-height: 490px; background-position: 62% center; }
   h1 { font-size: 39px; }
   .hero p { font-size: 16px; }
