@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Cta from "@/components/Cta";
+import ReviewsCarousel from "@/components/ReviewsCarousel";
 import {
   homeServices,
   proofItems,
-  reviews,
   trustChecks,
 } from "@/data/site";
 
@@ -108,27 +108,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="wrap">
-          <div className="section-head">
-            <p className="eyebrow">Google Business Reviews</p>
-            <h2>5-Star Service</h2>
-          </div>
-          <div className="reviews">
-            {reviews.map((review) => (
-              <article className="review" key={review.text}>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <div className="stars" aria-label="5 out of 5 stars">
-                    ★★★★★
-                  </div>
-                  <p>"{review.text}"</p>
-                  <strong>- {review.author}</strong>
-                </a>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ReviewsCarousel />
 
       <Cta />
     </main>

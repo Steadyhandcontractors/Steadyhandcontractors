@@ -62,13 +62,12 @@ Serving Charleston, Mount Pleasant, Summerville, Goose Creek, James Island, John
 ## Services Included
 
 - Tile Installation
-- Shower Remodeling
+- Shower Remodeling/Installation
 - Backsplashes
-- Tile & Grout Repair
+- Tile & Grout Repair/Cleaning
 - Outdoor Stone & Tile
 - Handyman Services
-- Minor Carpentry
-- Select Major Carpentry such as fencing, steps, and decks
+- Minor & Select Major Carpentry such as fencing, steps, and decks
 - Hardscaping
 - Plant Installation
 
@@ -94,14 +93,37 @@ components/
 
 Reviews were removed from the header and kept as a home page Google Business reviews section.
 
+## Social Links
+
+- Instagram: `https://www.instagram.com/steadyhandcontractors/`
+- Facebook: `https://www.facebook.com/profile.php?id=61570972769196`
+- Google Business: `https://share.google/wp03gcoM9RiVX54vv`
+- Nextdoor: `https://nextdoor.com/page/noahs-handyman-services`
+
+## Google Reviews
+
+Business Profile ID:
+
+```text
+13981049815893978876
+```
+
+Current implementation:
+
+- The homepage has a Google reviews carousel component.
+- The real Google review embed/widget code still needs to be pasted into the component if using a third-party embed.
+
+Automatic update options:
+
+- Google Business Profile Reviews API can retrieve reviews for a verified location, but requires OAuth access to the business account.
+- Google Places API can retrieve limited review data for a public place, but requires a Google Maps Platform API key and a Place ID.
+- A third-party Google reviews widget can provide a paste-in embed that usually auto-refreshes without custom API work.
+
 ## Still Needed
 
 Replace placeholders for:
 
-- Google Business review link
-- Instagram link
-- Facebook link
-- Nextdoor link
+- Google reviews embed/widget code or API feed
 - Owner bio photo
 - Real gallery/project photos
 - Real contact form endpoint

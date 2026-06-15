@@ -1,5 +1,14 @@
 import Link from "next/link";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { SiGooglemaps, SiNextdoor } from "react-icons/si";
 import { business, footerServices, navLinks, socialLinks } from "@/data/site";
+
+const socialIcons = {
+  facebook: FaFacebookF,
+  instagram: FaInstagram,
+  google: SiGooglemaps,
+  nextdoor: SiNextdoor,
+};
 
 export default function Footer() {
   return (
@@ -14,11 +23,23 @@ export default function Footer() {
             plant installation, and reliable handyman services.
           </p>
           <div className="socials">
-            {socialLinks.map((link) => (
-              <a key={link.label} href={link.href}>
-                {link.label}
-              </a>
-            ))}
+            {socialLinks.map((link) => {
+              const Icon = socialIcons[link.platform];
+
+              return (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.label}
+                  title={link.label}
+                >
+                  {Icon ? <Icon aria-hidden="true" /> : null}
+                  {link.label}
+                </a>
+              );
+            })}
           </div>
         </div>
 
