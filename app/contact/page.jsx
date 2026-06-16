@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm";
 import PageHero from "@/components/PageHero";
 import { business } from "@/data/site";
 
@@ -5,7 +6,10 @@ export const metadata = {
   title: "Contact",
 };
 
-export default function ContactPage() {
+export default async function ContactPage({ searchParams }) {
+  const params = await searchParams;
+  const sent = params?.sent === "1";
+
   return (
     <main>
       <PageHero kicker="Contact" title="Request a Free Estimate">
@@ -35,43 +39,7 @@ export default function ContactPage() {
               Saturday: By Appointment
             </p>
           </div>
-          <div className="form-card">
-            <form action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
-              <label>
-                Name
-                <input type="text" name="name" required />
-              </label>
-              <label>
-                Email
-                <input type="email" name="email" required />
-              </label>
-              <label>
-                Phone
-                <input type="tel" name="phone" />
-              </label>
-              <label>
-                Project Location
-                <input
-                  type="text"
-                  name="location"
-                  placeholder="City or neighborhood"
-                />
-              </label>
-              <label>
-                Project Details
-                <textarea
-                  name="message"
-                  required
-                  placeholder="Tell us what you need help with."
-                />
-              </label>
-              <button type="submit">Send Request</button>
-            </form>
-            <p className="form-note">
-              Note: replace the Formspree action URL with your real form endpoint
-              before going live.
-            </p>
-          </div>
+          <ContactForm sent={sent} />
         </div>
       </section>
     </main>

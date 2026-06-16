@@ -101,8 +101,8 @@ export default function HomePage() {
           </div>
           <div className="about-photo">
             <img
-              src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1300&q=80"
-              alt="Completed bathroom remodel with tiled shower and vanity"
+              src="/assets/bathroom-remodel-home.jpg"
+              alt="Bathroom remodel with tiled shower, freestanding tub, and double vanity"
             />
           </div>
         </div>

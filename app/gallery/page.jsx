@@ -10,9 +10,8 @@ export default function GalleryPage() {
   return (
     <main>
       <PageHero kicker="Gallery" title="Project Photos">
-        This page is ready for your actual project images. Send the photos and
-        these placeholders can be replaced with your tile, stone, carpentry, and
-        outdoor work.
+        Browse completed tile, repair, carpentry, mailbox, and outdoor project
+        photos from Steady Hand Contractors.
       </PageHero>
 
       <section className="section">

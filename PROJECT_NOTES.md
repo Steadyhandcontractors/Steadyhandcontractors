@@ -110,8 +110,10 @@ Business Profile ID:
 
 Current implementation:
 
-- The homepage has a Google reviews carousel component.
-- The real Google review embed/widget code still needs to be pasted into the component if using a third-party embed.
+- The homepage has an Elfsight Google Reviews widget embedded.
+- The provided Business Profile/CID ID is saved in `data/site.js`.
+- The provided ID did not resolve in Google's Place ID Finder, so do not use it as a widget Place ID.
+- Elfsight app class: `elfsight-app-f3c85da6-bf17-405a-b974-dd4d19e01ca6`.
 
 Automatic update options:
 
@@ -126,15 +128,15 @@ Replace placeholders for:
 - Google reviews embed/widget code or API feed
 - Owner bio photo
 - Real gallery/project photos
-- Real contact form endpoint
+- One-time FormSubmit email activation, if prompted by the first submission
 
-The contact form currently uses this placeholder:
+The contact form submits in-page with FormSubmit AJAX and falls back to:
 
 ```html
-https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID
+https://formsubmit.co/steadyhandcontractors@gmail.com
 ```
 
-Before the site is fully live, replace that with a real Formspree endpoint or another form service.
+The first live submission triggered a FormSubmit activation email. Confirm that email once from `steadyhandcontractors@gmail.com`, then future submissions should send directly without the activation warning.
 
 ## Git Commands
 

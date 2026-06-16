@@ -104,16 +104,14 @@ export const serviceRows = [
   {
     title: "Tile Installation",
     text: "We install floor, wall, and custom tile with careful layout, clean lines, and lasting durability. Every project is completed to TCNA and ANSI standards for proper installation and long-term performance. We are certified through the Ceramic Tile Education Foundation in floor and wall tile installation, as well as shower waterproofing.",
-    image:
-      "https://images.unsplash.com/photo-1584819964713-8e9d33a2472f?auto=format&fit=crop&w=900&q=80",
-    alt: "Tile installation",
+    image: "/assets/tile-installation-service.jpg",
+    alt: "Tile installer placing floor tile",
   },
   {
     title: "Shower Remodeling/Installation",
     text: "Custom shower remodeling done with proper waterproofing, thoughtful tile layout, and dependable installation methods. We walk every client through the process so they feel confident from start to finish and love the final result. Showers and bathrooms are used every day, so it matters to hire professionals who get it done right the first time.",
-    image:
-      "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?auto=format&fit=crop&w=900&q=80",
-    alt: "Shower remodeling",
+    image: "/assets/shower-remodeling-service.jpg",
+    alt: "Marble tile shower remodeling with glass enclosure",
   },
   {
     title: "Backsplashes",
@@ -125,16 +123,14 @@ export const serviceRows = [
   {
     title: "Tile & Grout Repair/Cleaning",
     text: "We repair cracked tile, failing grout, loose pieces, and worn surfaces so your tile looks better and performs the way it should. We also offer tile cleaning and sealing services to help protect your floors, walls, and grout lines over time. Many homeowners use the wrong cleaning products without realizing it, which can wear down grout and shorten the life of their tile.",
-    image:
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80",
-    alt: "Tile and grout repair",
+    image: "/assets/tile-grout-repair-service.jpg",
+    alt: "Tile and grout cleaning on bathroom floor",
   },
   {
     title: "Outdoor Tile & Stone",
     text: "Outdoor tile, stone, patio, walkway, and exterior surface projects built with materials suited for outdoor conditions. We install travertine, granite, traditional brick pavers, stone, and other exterior surfaces with proper prep and attention to long-term durability. Whether it's a patio, walkway, or custom outdoor feature, we can bring a clean, finished look to any space.",
-    image:
-      "https://images.unsplash.com/photo-1600566752229-250ed79470b1?auto=format&fit=crop&w=900&q=80",
-    alt: "Outdoor tile and stone",
+    image: "/assets/outdoor-tile-service.jpg",
+    alt: "Outdoor stone tile patio installation",
   },
   {
     title: "Hardscaping",
@@ -185,57 +181,85 @@ export const ownerChecks = [
   "Schluter Systems waterproofing product training",
 ];
 
-export const reviews = [
-  {
-    text: "Google reviews will appear here once the live review widget or approved review text is added.",
-    author: "Steady Hand Contractors",
-  },
-  {
-    text: "Use the Google Business link below to read the latest customer feedback.",
-    author: "Google Business",
-  },
-  {
-    text: "This carousel is ready for the Google review embed code or an API-powered reviews feed.",
-    author: "Google Reviews",
-  },
-];
+export const reviews = [];
 
 export const googleBusiness = {
   profileId: "13981049815893978876",
   reviewUrl: "https://share.google/wp03gcoM9RiVX54vv",
+  elfsightAppClass: "elfsight-app-f3c85da6-bf17-405a-b974-dd4d19e01ca6",
 };
 
 export const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1584819964713-8e9d33a2472f?auto=format&fit=crop&w=800&q=80",
-    alt: "Tile shower niche",
+    src: "/assets/gallery/project-2117.jpg",
+    alt: "White shower tile repair detail",
   },
   {
-    src: "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?auto=format&fit=crop&w=800&q=80",
-    alt: "Bathroom shower remodel",
+    src: "/assets/gallery/project-1722.jpg",
+    alt: "Patterned tile floor installation",
   },
   {
-    src: "https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=800&q=80",
-    alt: "Kitchen backsplash",
+    src: "/assets/gallery/project-2432.jpg",
+    alt: "Tile installation project detail",
   },
   {
-    src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80",
-    alt: "Bathroom vanity and tile",
+    src: "/assets/gallery/project-2433.jpg",
+    alt: "Tile and grout project detail",
   },
   {
-    src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
-    alt: "Neutral bathroom tile",
+    src: "/assets/gallery/project-2502.jpg",
+    alt: "Completed tile project detail",
   },
   {
-    src: "https://images.unsplash.com/photo-1600566752229-250ed79470b1?auto=format&fit=crop&w=800&q=80",
-    alt: "Outdoor stone and tile",
+    src: "/assets/gallery/project-2509.jpg",
+    alt: "Tile project workmanship detail",
   },
   {
-    src: "https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=800&q=80",
-    alt: "Hardscaping",
+    src: "/assets/gallery/project-2767.jpg",
+    alt: "Interior project installation detail",
   },
   {
-    src: "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80",
-    alt: "Carpentry",
+    src: "/assets/gallery/project-2767-2.jpg",
+    alt: "Interior project finished detail",
+  },
+  {
+    src: "/assets/gallery/project-2845.jpg",
+    alt: "Home project detail",
+  },
+  {
+    src: "/assets/gallery/project-2794.jpg",
+    alt: "Tile and home improvement project",
+  },
+  {
+    src: "/assets/gallery/project-2792.jpg",
+    alt: "Finished project detail",
+  },
+  {
+    src: "/assets/gallery/mailbox-repair-before-after.jpg",
+    alt: "Mailbox post repair before and after",
+  },
+  {
+    src: "/assets/gallery/patterned-tile-repair-before-after.jpg",
+    alt: "Patterned tile floor repair before and after",
+  },
+  {
+    src: "/assets/gallery/murphy-bed-installation.jpg",
+    alt: "Murphy bed installation before and after",
+  },
+  {
+    src: "/assets/gallery/landscape-mulch-installation-01.jpg",
+    alt: "Mulch and plant installation along driveway",
+  },
+  {
+    src: "/assets/gallery/landscape-mulch-installation-02.jpg",
+    alt: "Completed landscape mulch and plant installation",
+  },
+  {
+    src: "/assets/gallery/landscape-mulch-installation-03.jpg",
+    alt: "Wide view of driveway landscaping and mulch installation",
+  },
+  {
+    src: "/assets/gallery/landscape-mulch-installation-04.jpg",
+    alt: "Landscape bed with fresh mulch and plants",
   },
 ];

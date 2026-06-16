@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaLinkedinIn } from "react-icons/fa";
 import Cta from "@/components/Cta";
 import PageHero from "@/components/PageHero";
 import { ownerChecks } from "@/data/site";
@@ -52,14 +53,26 @@ export default function AboutPage() {
                 <li key={check}>{check}</li>
               ))}
             </ul>
-            <Link className="btn" href="/contact">
-              Contact Us
-            </Link>
+            <div className="about-actions">
+              <Link className="btn" href="/contact">
+                Contact Us
+              </Link>
+              <a
+                className="about-social-icon"
+                href="https://www.linkedin.com/in/noah-n-gillespie"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Noah Gillespie on LinkedIn"
+                title="LinkedIn"
+              >
+                <FaLinkedinIn aria-hidden="true" />
+              </a>
+            </div>
           </div>
           <div className="about-photo">
             <img
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80"
-              alt="Owner photo placeholder"
+              src="/assets/noah-gillespie-about.jpg"
+              alt="Noah Gillespie, owner of Steady Hand Contractors"
             />
           </div>
         </div>
