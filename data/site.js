@@ -262,4 +262,80 @@ export const galleryImages = [
     src: "/assets/gallery/landscape-mulch-installation-04.jpg",
     alt: "Landscape bed with fresh mulch and plants",
   },
+  {
+    src: "/assets/gallery/uploads/IMG_3300.jpg",
+    alt: "Recent tile and repair project photo",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3302.jpg",
+    alt: "Recent home improvement project photo",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3303.jpg",
+    alt: "Recent contractor project detail",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3345.jpg",
+    alt: "Recent finished project photo",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3346.jpg",
+    alt: "Recent tile installation detail",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3452.jpg",
+    alt: "Recent remodeling project photo",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3453.jpg",
+    alt: "Recent bathroom project detail",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3454.jpg",
+    alt: "Recent tile project close up",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3455.jpg",
+    alt: "Recent shower and tile project photo",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3456.jpg",
+    alt: "Recent home repair project photo",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3457.jpg",
+    alt: "Recent finished repair detail",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3458.jpg",
+    alt: "Recent contractor workmanship photo",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3466.jpg",
+    alt: "Recent tile and shower repair photo",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3470.jpg",
+    alt: "Recent bathroom tile project photo",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3471.jpg",
+    alt: "Recent bathroom remodel detail",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3192-2.jpg",
+    alt: "Mini split wall repair before and after",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3193-2.jpg",
+    alt: "Mini split wall repair project before and after",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3476.jpg",
+    alt: "Shower tile edge repair before and after",
+  },
+  {
+    src: "/assets/gallery/uploads/IMG_3477.jpg",
+    alt: "Shower tile trim repair before and after",
+  },
 ];
