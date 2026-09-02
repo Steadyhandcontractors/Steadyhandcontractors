@@ -409,7 +409,11 @@ button:disabled {
   .proof-item { padding-left: 0; padding-right: 0; }
   .about { gap: 25px; }
   .about-photo img { height: 260px; }
-  .gallery img { height: 180px; }
+  .gallery img {
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
   .cta .wrap { text-align: center; }
   .bottom .wrap { justify-content: center; text-align: center; padding: 13px 0; }
 }
