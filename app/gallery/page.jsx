@@ -12,8 +12,8 @@ export default function GalleryPage() {
   return (
     <main>
       <PageHero kicker="Gallery" title="Project Photos">
-        Browse completed tile, repair, carpentry, mailbox, and outdoor project
-        photos from Steady Hand Contractors.
+        Browse completed tile, repair, carpentry, and outdoor project photos
+        from Steady Hand Contractors.
       </PageHero>
 
       <section className="section">
