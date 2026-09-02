@@ -7,6 +7,8 @@ export const metadata = {
 };
 
 export default function GalleryPage() {
+  const newestFirstImages = [...galleryImages].reverse();
+
   return (
     <main>
       <PageHero kicker="Gallery" title="Project Photos">
@@ -16,7 +18,7 @@ export default function GalleryPage() {
 
       <section className="section">
         <div className="wrap gallery">
-          {galleryImages.map((image) => (
+          {newestFirstImages.map((image) => (
             <img key={image.src} src={image.src} alt={image.alt} />
           ))}
         </div>
