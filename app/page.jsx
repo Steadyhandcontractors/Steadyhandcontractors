@@ -8,7 +8,7 @@ import {
 } from "@/data/site";
 
 export const metadata = {
-  title: "Tile, Stone & Handyman Services",
+  title: "Tile, Carpentry & Handyman Services",
 };
 
 export default function HomePage() {
@@ -18,7 +18,7 @@ export default function HomePage() {
         <div className="wrap">
           <div className="hero-content">
             <p className="kicker">Quality Work. Reliable Service.</p>
-            <h1>Tile, Stone &amp; Handyman Services</h1>
+            <h1>Tile, Carpentry &amp; Handyman Services</h1>
             <p>
               Professional craftsmanship rooted in precision, integrity, and care
               for every home project, inside and out.

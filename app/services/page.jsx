@@ -9,7 +9,7 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <main>
-      <PageHero kicker="Services" title="Tile, Stone, Carpentry & Outdoor Work">
+      <PageHero kicker="Services" title="Tile, Carpentry & Handyman Services">
         Interior and exterior work completed with steady craftsmanship, clear
         communication, and respect for your home.
       </PageHero>

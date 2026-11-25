@@ -71,17 +71,7 @@ export const homeServices = [
   {
     icon: "▦",
     title: "Tile Installation",
-    text: "Floor, wall, and custom tile work installed with precision and care.",
-  },
-  {
-    icon: "♨",
-    title: "Shower Remodeling/Installation",
-    text: "Custom showers with waterproofing systems built to last.",
-  },
-  {
-    icon: "▤",
-    title: "Backsplashes",
-    text: "Clean kitchen and bathroom backsplash installations.",
+    text: "Floor, wall, and custom tile work installed with precision and care. Shower remodeling and new installations, waterproofing system installations, and backsplashes.",
   },
   {
     icon: "⚒",
@@ -89,14 +79,19 @@ export const homeServices = [
     text: "Repair for cracked tile, failing grout, and worn surfaces.",
   },
   {
+    icon: "▰",
+    title: "Carpentry",
+    text: "Fencing, Decks, Molding, and wood siding",
+  },
+  {
+    icon: "▧",
+    title: "Drywall Repair",
+    text: "Repairs for holes, cracks, and damaged drywall.",
+  },
+  {
     icon: "◆",
     title: "Outdoor Stone & Tile",
     text: "Outdoor tile, stone, patios, walkways, and exterior surfaces.",
-  },
-  {
-    icon: "▰",
-    title: "Minor & Select Major Carpentry",
-    text: "Carpentry, handyman details, small repairs, fencing, steps, and decks.",
   },
 ];
 
@@ -133,25 +128,18 @@ export const serviceRows = [
     alt: "Outdoor stone tile patio installation",
   },
   {
-    title: "Hardscaping",
-    text: "Small hardscaping projects that improve outdoor living areas, walkways, borders, and practical exterior spaces.",
+    title: "Carpentry",
+    text: "From decks and fences to molding and wood siding, we deliver quality carpentry built to last. Our work follows industry standards and local building codes, with careful attention to craftsmanship in every detail.",
     image:
-      "https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=900&q=80",
-    alt: "Hardscaping",
+      "https://images.unsplash.com/photo-1769831190663-95fe8454d8c9?auto=format&fit=crop&w=900&q=80",
+    alt: "Wooden privacy fence and gate",
   },
   {
-    title: "Plant Installation",
-    text: "Plant installation that supports finished outdoor projects with clean, simple landscaping improvements. With 9 years of experience installing plants indoors and outdoors, we help transform spaces with the right placement, preparation, and attention to detail. We consider soil type, watering needs, sunlight exposure, and overall design so each installation looks good and has the best chance to thrive.",
+    title: "Drywall Repair",
+    text: "HVAC and plumbing work can leave large openings in your walls. Whether you need those holes patched or other damaged drywall repaired, we bring a steady hand and attention to detail to make your walls look as though nothing ever happened.",
     image:
-      "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&fit=crop&w=900&q=80",
-    alt: "Plant installation",
-  },
-  {
-    title: "Minor & Select Major Carpentry",
-    text: "Minor carpentry, small repairs, trim adjustments, and select outdoor projects including fencing, steps, and decks. We also offer handyman services such as fixture installation, shelving, planting beds, furniture moving, appliance installs, and small repair work. Whether it’s finishing a space, fixing an issue, or handling the details, we bring clean workmanship and dependable service to every project.",
-    image:
-      "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=900&q=80",
-    alt: "Carpentry",
+      "https://images.unsplash.com/photo-1768839725085-829e6ac7ac26?auto=format&fit=crop&w=900&q=80",
+    alt: "Worker applying compound to a wall",
   },
 ];
 
@@ -163,7 +151,8 @@ export const footerServices = [
   "Outdoor Stone & Tile",
   "Hardscaping",
   "Plant Installation",
-  "Minor & Select Major Carpentry",
+  "Carpentry",
+  "Drywall Repair",
 ];
 
 export const trustChecks = [
@@ -200,11 +189,11 @@ export const galleryImages = [
   },
   {
     src: "/assets/gallery/project-2432.jpg",
-    alt: "Tile installation project detail",
+    alt: "Closed Murphy bed installation",
   },
   {
     src: "/assets/gallery/project-2433.jpg",
-    alt: "Tile and grout project detail",
+    alt: "Open Murphy bed installation",
   },
   {
     src: "/assets/gallery/project-2502.jpg",
@@ -216,23 +205,23 @@ export const galleryImages = [
   },
   {
     src: "/assets/gallery/project-2767.jpg",
-    alt: "Interior project installation detail",
+    alt: "Tile installation work in progress",
   },
   {
     src: "/assets/gallery/project-2767-2.jpg",
-    alt: "Interior project finished detail",
+    alt: "Finished tile installation",
   },
   {
     src: "/assets/gallery/project-2845.jpg",
-    alt: "Home project detail",
+    alt: "Finished tile and cabinetry",
   },
   {
     src: "/assets/gallery/project-2794.jpg",
-    alt: "Tile and home improvement project",
+    alt: "Wooden outdoor enclosure",
   },
   {
     src: "/assets/gallery/project-2792.jpg",
-    alt: "Finished project detail",
+    alt: "Wooden enclosure under construction",
   },
   {
     src: "/assets/gallery/mailbox-repair-before-after.jpg",
@@ -284,31 +273,31 @@ export const galleryImages = [
   },
   {
     src: "/assets/gallery/uploads/IMG_3452.jpg",
-    alt: "Recent remodeling project photo",
+    alt: "Wood privacy fence around a backyard",
   },
   {
     src: "/assets/gallery/uploads/IMG_3453.jpg",
-    alt: "Recent bathroom project detail",
+    alt: "Wooden backyard fence",
   },
   {
     src: "/assets/gallery/uploads/IMG_3454.jpg",
-    alt: "Recent tile project close up",
+    alt: "Wooden fence surrounding a lawn",
   },
   {
     src: "/assets/gallery/uploads/IMG_3455.jpg",
-    alt: "Recent shower and tile project photo",
+    alt: "Wood privacy fence and gate",
   },
   {
     src: "/assets/gallery/uploads/IMG_3456.jpg",
-    alt: "Recent home repair project photo",
+    alt: "Wooden fence gate",
   },
   {
     src: "/assets/gallery/uploads/IMG_3457.jpg",
-    alt: "Recent finished repair detail",
+    alt: "Wooden side yard gate",
   },
   {
     src: "/assets/gallery/uploads/IMG_3458.jpg",
-    alt: "Recent contractor workmanship photo",
+    alt: "Wooden fence beside a house",
   },
   {
     src: "/assets/gallery/uploads/IMG_3466.jpg",
@@ -316,11 +305,11 @@ export const galleryImages = [
   },
   {
     src: "/assets/gallery/uploads/IMG_3470.jpg",
-    alt: "Recent bathroom tile project photo",
+    alt: "Kitchen backsplash tile installation",
   },
   {
     src: "/assets/gallery/uploads/IMG_3471.jpg",
-    alt: "Recent bathroom remodel detail",
+    alt: "Finished kitchen backsplash",
   },
   {
     src: "/assets/gallery/uploads/IMG_3192-2.jpg",
@@ -338,4 +327,18 @@ export const galleryImages = [
     src: "/assets/gallery/uploads/IMG_3477.jpg",
     alt: "Shower tile trim repair before and after",
   },
+  { src: "/assets/gallery/uploads/IMG_4004.jpg", alt: "Tile project photo" },
+  { src: "/assets/gallery/uploads/IMG_4005.jpg", alt: "Tile project photo" },
+  { src: "/assets/gallery/uploads/IMG_4008.jpg", alt: "Tile project photo" },
+  { src: "/assets/gallery/uploads/IMG_4010.jpg", alt: "Tile project photo" },
+  { src: "/assets/gallery/uploads/IMG_4012.jpg", alt: "Tile project photo" },
+  { src: "/assets/gallery/uploads/IMG_4019.jpg", alt: "Tile project photo" },
+  { src: "/assets/gallery/uploads/IMG_3639.jpg", alt: "Carpentry project photo" },
+  { src: "/assets/gallery/uploads/IMG_3642.jpg", alt: "Carpentry project photo" },
+  { src: "/assets/gallery/uploads/IMG_3645.jpg", alt: "Carpentry project photo" },
+  { src: "/assets/gallery/uploads/IMG_3646.jpg", alt: "Carpentry project photo" },
+  { src: "/assets/gallery/uploads/IMG_3653.jpg", alt: "Carpentry project photo" },
+  { src: "/assets/gallery/uploads/IMG_3693.jpg", alt: "Carpentry project photo" },
+  { src: "/assets/gallery/uploads/IMG_3705.jpg", alt: "Carpentry project photo" },
+  { src: "/assets/gallery/uploads/IMG_3708.jpg", alt: "Carpentry project photo" },
 ];

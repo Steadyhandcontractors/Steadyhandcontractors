@@ -1,29 +1,17 @@
 import Cta from "@/components/Cta";
 import PageHero from "@/components/PageHero";
-import { galleryImages } from "@/data/site";
+import Gallery from "@/components/Gallery";
 
-export const metadata = {
-  title: "Gallery",
-};
+export const metadata = { title: "Gallery" };
 
 export default function GalleryPage() {
-  const newestFirstImages = [...galleryImages].reverse();
-
   return (
     <main>
       <PageHero kicker="Gallery" title="Project Photos">
-        Browse completed tile, repair, carpentry, and outdoor project photos
+        Browse completed tile, carpentry, drywall, and handyman project photos
         from Steady Hand Contractors.
       </PageHero>
-
-      <section className="section">
-        <div className="wrap gallery">
-          {newestFirstImages.map((image) => (
-            <img key={image.src} src={image.src} alt={image.alt} />
-          ))}
-        </div>
-      </section>
-
+      <section className="section"><div className="wrap"><Gallery /></div></section>
       <Cta text="Get a free estimate for your next project." />
     </main>
   );

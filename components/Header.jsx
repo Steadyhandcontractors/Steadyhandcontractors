@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { business, navLinks } from "@/data/site";
 
 export default function Header() {
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
@@ -39,7 +41,10 @@ export default function Header() {
           <Link className="logo" href="/" aria-label={`${business.shortName} home`}>
             <img src={business.logo} alt={business.name} />
           </Link>
-          <nav className="menu" aria-label="Primary navigation">
+          <button className="menu-toggle" type="button" aria-expanded={menuOpen} aria-controls="primary-menu" onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? "Close" : "Menu"}
+          </button>
+          <nav id="primary-menu" className={`menu${menuOpen ? " menu-open" : ""}`} aria-label="Primary navigation">
             {navLinks.map((link) => {
               const active =
                 link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
@@ -48,14 +53,16 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  onClick={() => setMenuOpen(false)}
                   aria-current={active ? "page" : undefined}
                 >
                   {link.label}
                 </Link>
               );
             })}
+            <Link className="mobile-menu-cta" href="/contact" onClick={() => setMenuOpen(false)}>Request a Free Estimate</Link>
           </nav>
-          <Link className="btn" href="/contact">
+          <Link className="btn nav-cta" href="/contact">
             Request a Free Estimate
           </Link>
         </div>
